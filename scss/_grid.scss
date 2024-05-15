@@ -34,6 +34,12 @@
             padding: 20px;
         }
     }
+    &-md33{
+        @include md-screen{
+            flex: 0 0 33.333333%;
+            padding: 20px;
+        }
+    }
     &-md50{
         @include md-screen{
             flex: 0 0 50%;
@@ -43,6 +49,12 @@
     &-lg25{
         @include lg-screen{
             flex: 0 0 25%;
+            padding: 20px;
+        }
+    }
+    &-lg33{
+        @include lg-screen{
+            flex: 0 0 33.333333%;
             padding: 20px;
         }
     }

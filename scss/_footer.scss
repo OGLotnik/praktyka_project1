@@ -1,3 +1,11 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
 footer{
-    $color1:blue;
+    height: 30vh;
+    background-color: $color3;
+    color: $color7;
+
+    display: flex;
+    align-items: center;
 }
