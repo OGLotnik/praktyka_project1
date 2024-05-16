@@ -366,7 +366,7 @@ section p {
   align-items: center;
 }
 
-label {
+input, textarea, label {
   display: block;
   margin-bottom: 5px;
   font-family: inherit;
@@ -374,12 +374,26 @@ label {
   font-size: 1.6rem;
 }
 
-input {
-  display: block;
-  margin-bottom: 5px;
+input, textarea {
   font-family: inherit;
-  width: 100%;
-  font-size: 1.6rem;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  outline: 0;
+}
+input:focus, textarea:focus {
+  border-color: gray;
+}
+input[type=submit], textarea[type=submit] {
+  margin-top: 30px;
+  transition-duration: 0.3s;
+}
+input[type=submit]:hover, textarea[type=submit]:hover {
+  background-color: lightgray;
+}
+
+textarea {
+  resize: none;
 }
 
 footer {

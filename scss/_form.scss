@@ -1,14 +1,34 @@
-label{
+%properties{
     display: block;
     margin-bottom: 5px;
     font-family: inherit;
     width: 100%;
     font-size: 1.6rem;
 }
+label{
+    @extend %properties;
+}
 input{
-    display: block;
-    margin-bottom: 5px;
+    @extend %properties;
     font-family: inherit;
-    width: 100%;
-    font-size: 1.6rem;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    outline: 0;
+
+    &:focus{
+        border-color: gray
+    }
+    &[type="submit"]{
+        margin-top: 30px;
+        transition-duration:.3s;
+        &:hover{
+            background-color: lightgray
+            
+        }
+    }
+}
+textarea{
+    @extend input;
+    resize: none;
 }
